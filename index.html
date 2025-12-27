@@ -27,15 +27,6 @@
             margin: 0 0 10px 0;
             text-align: center;
         }
-        .subtitle {
-            margin: 0 0 20px 0;
-            text-align: left;
-        }        
-        .subtitle a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #C3DDF9
-        }
         .contact {
             text-align: center;
             margin-bottom: 60px;
@@ -45,20 +36,29 @@
             text-decoration: none;
             padding-bottom: 2px;
             font-weight: bold;
-            color: #C3DDF9;
         }
         .contact a:hover {
-            opacity: 0.7;
+            color: #549294;
         }
         section {
             margin-bottom: 30px;
+            border: 2px solid #549294;
+            clip-path: polygon(5px 0%, calc(100% - 5px) 0%, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0% calc(100% - 5px), 0% 5px);
+            padding: 20px;
+        }
+        #intro p {
+            font-size: 1.1em;
+            text-align: center;
+            margin: 0;
+            line-height: 1.5;
         }
         h2 {
             font-size: 1.2em;
             font-weight: 400;
-            margin: 0 0 20px 0;
+            margin: 0 0 0 0;
             border-bottom: none;
             padding-bottom: 5px;
+
         }
         ul {
             list-style: none;
@@ -74,11 +74,13 @@
             margin-right: 10px;
         }
         a {
-            color: #000;
-            text-decoration: underline;
+            color: #D6DEE8;
+            text-decoration: none;
+            transition: color 0.5s ease;
         }
         a:hover {
-            opacity: 0.7;
+            text-decoration: underline;
+            color: #549294;
         }
         @media (max-width: 768px) {
             .container {
@@ -92,7 +94,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Jack Kay</h1>
+        <h1>Jack Kay ⏚</h1>
         <div class="contact">
             <a href="mailto:jack.wil.kay@gmail.com" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -113,25 +115,37 @@
                     <circle cx="4" cy="4" r="2"/>
                 </svg>
             </a>
+            <a href="https://www.google.com/maps/place/Toronto,+ON,+Canada" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+            </a>
         </div>
 
-        <p class="subtitle"> Electrical Engineer @ <a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></p>
-
+        <section id="work">
+            <h2>_WORK</h2>
+            <ul>
+                <li><span class="year">2025 ▸</span> <span class="role">Electrical Engineer @ </span> <span class="company"><a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></span></li>
+                <li><span class="year">2024 ▸</span> <span class="role">Assembly Technician @ </span> <span class="company"><a href="https://kepler.space/">Kepler Communications</a></span></li>
+                <li><span class="year">2023 ▸</span> <span class="role">Applications Engineer @ </span> <span class="company"><a href="https://www.athleticknit.com/">Athletic Knit</a></span> <> Mosaic Manufacturing</span></li>
+            </ul>
+        </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>_PROJECTS</h2>
             <ul>
-                <li><span class="year">2025:</span> Project 1 - Brief description of the project.</li>
-                <li><span class="year">2024:</span> Project 2 - Brief description of the project.</li>
+                <li><span class="year">2025 ▸</span> Project 1 - Brief description of the project.</li>
+                <li><span class="year">2024 ▸</span> Project 2 - Brief description of the project.</li>
                 <!-- Add more projects as needed -->
             </ul>
         </section>
 
         <section id="experiments">
-            <h2>Experiments</h2>
+            <h2>_EXPERIMENTS</h2>
             <ul>
-                <li><span class="year">2025:</span> Experiment 1 - Brief description of the experiment.</li>
-                <li><span class="year">2024:</span> Experiment 2 - Brief description of the experiment.</li>
+                <li><span class="year">2025 ▸</span> Experiment 1 - Brief description of the experiment.</li>
+                <li><span class="year">2024 ▸</span> Experiment 2 - Brief description of the experiment.</li>
                 <!-- Add more experiments as needed -->
             </ul>
         </section>
